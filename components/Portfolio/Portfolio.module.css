@@ -106,3 +106,18 @@
     padding: 48px 24px 32px;
   }
 }
+
+.card {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  color: inherit;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}

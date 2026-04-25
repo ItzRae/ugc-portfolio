@@ -5,7 +5,7 @@ import styles from './Portfolio.module.css'
 
 // Replace these with your real video thumbnails/images in /public/images/
 const items = [
-  { tag: 'Skincare', title: 'Glow Serum Campaign', bg: 'linear-gradient(135deg, #C8A898 0%, #A8876A 100%)', span: true },
+  { tag: 'Tech', title: 'Julius AI Campaign', bg: 'linear-gradient(135deg, #C8A898 0%, #A8876A 100%)', span: true },
   { tag: 'Wellness',  title: 'Morning Ritual',       bg: 'linear-gradient(135deg, #8A9E8B 0%, #6B7E6C 100%)' },
   { tag: 'Fashion',   title: 'OOTD Series',           bg: 'linear-gradient(135deg, #B5B0A8 0%, #8A857E 100%)' },
   { tag: 'Food & Drink', title: 'Matcha Moments',     bg: 'linear-gradient(135deg, #C4A99A 0%, #9A7B68 100%)' },

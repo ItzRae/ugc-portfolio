@@ -13,12 +13,14 @@ const rowOne: Brand[] = [
   { name: 'Medicube', file: 'medicube.svg'},
   { name: 'Torriden', file: 'torriden.svg', scale: 2.3},
 { name: 'Blissy', file: 'blissy.svg', scale: 1.4},
+{ name: 'Exposed', file: 'exposed.svg', scale:1.8},
 { name: "Vivaia", file: 'vivaia.svg', scale: 3.5},
 {name: "Talkspace", file: 'talkspace.svg', scale: 3.2},
 { name: "Lechery", file: 'lechery.svg', scale: 2.3},
 { name: "Peech", file: 'peech.svg', scale: 2.0},
 { name: "Julius AI", file: 'juliusai.svg', scale: 2.9},
 { name: "Derma E", file: 'dermae.svg', scale: 3.3},
+
 
 
 ]

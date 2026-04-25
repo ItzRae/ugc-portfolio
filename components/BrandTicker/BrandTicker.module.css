@@ -65,12 +65,12 @@
 
 /* Scroll LEFT — standard marquee direction */
 .rowLeft {
-  animation: scrollLeft 28s linear infinite;
+  animation: scrollLeft 25s linear infinite;
 }
 
 /* Scroll RIGHT */
 .rowRight {
-  animation: scrollRight 32s linear infinite;
+  animation: scrollRight 27s linear infinite;
 }
 
 

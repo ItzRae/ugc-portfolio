@@ -85,7 +85,7 @@ export default function Testimonials() {
       >
         <div>
           <h2 className={`${styles.title} display`}>
-            Brands <em>love working</em> with me
+            What brands <em>say</em> about working with me
           </h2>
 
           <AnimatePresence>

@@ -1,0 +1,121 @@
+.section {
+  padding: 48px 0;
+  background: var(--warm-white);
+  border-bottom: 0.5px solid var(--border);
+  overflow: hidden;
+}
+.logoImg {
+  width: auto;
+  height: 26px; /* default — overridden per-brand via inline style + scale prop */
+  opacity: 0.9;
+}
+
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-align: center;
+  margin-bottom: 32px;
+  font-weight: 400;
+}
+
+/* Outer wrapper clips overflow and holds the fade overlays */
+.track {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.track:last-child {
+  margin-bottom: 0;
+}
+
+/* Fade edges — left */
+.fadeLeft {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 160px;
+  background: linear-gradient(to right, var(--warm-white) 0%, transparent 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Fade edges — right */
+.fadeRight {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 160px;
+  background: linear-gradient(to left, var(--warm-white) 0%, transparent 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* The moving strip */
+.row {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  gap: 0;
+}
+
+/* Scroll LEFT — standard marquee direction */
+.rowLeft {
+  animation: scrollLeft 28s linear infinite;
+}
+
+/* Scroll RIGHT */
+.rowRight {
+  animation: scrollRight 32s linear infinite;
+}
+
+
+@keyframes scrollLeft {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes scrollRight {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+/* Individual logo pill */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  height: 56px;
+  flex-shrink: 0;
+}
+
+/* Text fallback — remove this once you have real logo images */
+.logoText {
+  font-family: var(--font-dm-sans), sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+  font-weight: 400;
+  opacity: 0.75;
+  transition: opacity 0.2s;
+}
+
+.logo:hover .logoText {
+  opacity: 1;
+  color: var(--espresso);
+}
+
+/* Respect user's reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .rowLeft,
+  .rowRight {
+    animation: none;
+  }
+}

@@ -86,7 +86,7 @@ export default function Hero() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.7 }}
         >
-          <div className={`${styles.badgeNum} display`}>47+</div>
+          <div className={`${styles.badgeNum} display`}>45+</div>
           <div className={styles.badgeLabel}>Brand Collabs</div>
         </motion.div>
       </div>
